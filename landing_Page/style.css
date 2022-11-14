@@ -1,6 +1,6 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    background:url(/landing_Page/vida-de-pet/fundo1.jpg);
+
+#sobre>img{
+    width: 25px;
+    height: 25px;
 }
