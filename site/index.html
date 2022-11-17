@@ -14,9 +14,9 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 
-        <title>Novo Produto</title>
-    
-        
+    <title>Hort-Frut Hidromel</title>
+
+
     <style>
         * {
             margin: 0;
@@ -24,78 +24,86 @@
             font-family: Arial, Helvetica, sans-serif;
 
         }
-        body{
-            background: rgb(212, 195, 195);
-        }
-        header{
-            background: orange;
+
+        body {
+            background: rgb(185, 80, 80);
         }
 
-        span{
-            background: red;
+        header>nav {
+            background: rgb(57, 221, 7);
+            color: red;
+          
         }
 
-        nav{
-            background: blue;
+        span {
+            background: rgb(127, 161, 206);
         }
-        article{
+
+        nav>a {
+            align-items: center;
+            margin: auto;
+            height: 20px;
+            margin: 20px;
+            text-decoration: none;
+
+        }
+
+        article {
             background: yellowgreen;
         }
-        footer{
+
+        footer {
             background: yellow;
         }
 
-
-
-        
+        #logo {
+            display: flex;
+            text-decoration: none;
+        }
     </style>
 
 </head>
 
-<body col-12 >                                                                                                                      
+<body class=" col-12 flex-column flex-sm-row">
 
-    <div class="container  col-11 m-auto">
+    <div >
         <header>
-            header
-            <span> <img src="logo.png" alt="logo"> span</span>
-           
-            
-            <nav class="navbar navebar-fluid">
-                <div id="menu" >
-                    <div id="menu-barra" class=" nav">
-                        <ul >
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Produtos</a>
-                            </li>
-                    </div>
-                    <div class="menu-item">
-
-
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Hort-Frut Hidromel</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#carrocel">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#produtos">Produtos</a>
+                          </li>
+                        </ul>
                     </div>
                 </div>
-
-                
-                
-                           
-                /
-
-
             </nav>
+            
+
+
         </header>
         <article>
             /article
-            <section class="carrocel">
+            <section class="carrocel" id="carrocel">
                 /carrocel
             </section>
 
             <section class="products">products</section>
-        
-            <section class="price">
+
+            <section class="price" id="produtos">
                 <div class="item">price</div>
                 <div class="item">/</div>
                 <div class="item">/</div>
             </section>
-            
+
         </article>
         <footer>
             /footer
