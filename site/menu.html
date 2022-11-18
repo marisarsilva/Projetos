@@ -22,27 +22,14 @@
     <title>Hort-Frut Hidromel</title>
 
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-
-        body {
-            background: rgb(185, 80, 80);
-        }
-
-       
-    </style>
+   
 
 </head>
 
-<body class=" col-12 flex-column flex-sm-row">
+<body th:fragment="Cabeçalho" class=" col-12 flex-column flex-sm-row">
 
 
-    <header class="flex-column flex-sm-row" style="z-index:999;">
+    <header  class="flex-column flex-sm-row" style="z-index:999;">
         <nav class="navbar navbar-expand-lg fixed-top" style="background: rgb(235, 36, 36);">
             <div class="container-fluid col-11 m-auto">
                 <a class="navbar-brand " href="#" style="color: white;">Hort-Frut Hidromel</a>
@@ -591,7 +578,7 @@
         </article>
     </main>
 
-    <footer class="border-top text-muted bg-ligth " style="background: rgb(235, 36, 36)">
+    <footer type="text" th:fragment class="border-top text-muted bg-ligth " style="background: rgb(235, 36, 36)">
         <div class=" col-12 flex-column flex-sm-row fixed-bottom">
             <div row py-3>
                 <div class="col-12 cl-md-4 text-center text-md-left">
@@ -604,7 +591,6 @@
                     <a href="#" class="text-decoration-none text-dark">Administrar</a>
                 </div>
             </div>
-        </div>
     </footer>
 
     
