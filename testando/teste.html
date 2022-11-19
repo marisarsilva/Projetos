@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hort-Fruit Hidromel</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/site/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/site/img/favicon-32x32.png">
@@ -17,57 +19,70 @@
     <meta name="theme-color" content="#ffffff">
 
     <style>
-    *{
-        margin: 0;
-        padding: 0;
+        * {
+            margin: 0;
+            padding: 0;
 
-    }
-    body{
-        background:  rgb(185, 80, 80) ;
-    }
-    header{
-        top: 0;
-       
+        }
 
-    }
-    
-    footer{
-        bottom: 0;
-        background:  rgba(235, 36, 36, 0.623);
-    }
-    ul,li,a{
-        list-style: none;
-        
-    }
+        body {
+            background: rgb(185, 80, 80);
+            
+        }
 
+        header {
+            top: 0;
+            z-index: 999;
+
+
+        }
+
+        footer {
+            bottom: 0;
+            background: rgba(235, 36, 36, 0.623);
+            z-index: 999;
+        }
+
+        ul,
+        li,
+        a {
+            list-style: none;
+
+        }
+        main{
+            
+            
+        }
     </style>
 
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-danger fixed-top">
             <div class="container-fluid col-11">
-                <a img src="/site/img/frutaria-icone.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-inline">Hort-Fruit Hidromel</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand text-white" href="#carrocel">Hort-Fruit Hidromel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse text-white " id="navbarNav">
 
                     <ul class="navbar-nav text-white ">
                         <li class="nav-item">
-                            <a class="nav-link text-white active" aria-current="page"  href="#">Principal</a> 
+                            <a class="nav-link text-white active" aria-current="page" href="#">Principal</a>
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link text-white  active" aria-current="page" href="#">Produtos</a> 
+                            <a class="nav-link text-white  active" aria-current="page" href="#">Produtos</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white  active" aria-current="page" href="#">Contato</a>
+                            <a class="nav-link text-white  active" aria-current="page" href="#">Contato</a>
                         </li>
                     </ul>
                 </div>
                 <div class="align-self-end ">
-                    <ul class="navebar-nav  d-inline-flex text-white" >
+                    <ul class="navebar-nav  d-inline-flex text-white">
                         <li class="nav-item me-3">
                             <a href="/site/cadastro.html" class="nav-link ">Cadastrar</a>
 
@@ -94,55 +109,82 @@
 
         </nav>
     </header>
-    <main>
-        <div id="carrocelControle" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/site/img/banner (1).png" class="d-block w-100" alt="abacate">
-              </div>
-              <div class="carousel-item">
-                <img src="/site/img/banner (2).png" class="d-block w-100" alt="morangos">
-              </div>
-              <div class="carousel-item">
-                <img src="/site/img/banner (4).png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/site/img/banner (5).png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/site/img/banner (6).png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carrocelControle" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carrocelControle" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+    <main class="col-11 m-auto pt-3">
+        <article>
+            
+            <div class="container-fluid">
+                <div id="mainSlider" class="carrousel slide" data-rid="carrousel"></div>
+                <div>
+                    
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Novidades!</span>
+                </button  container>
+                <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div="banner" class=" container carousel carousel-dark slide mt-5" data-bs-ride="carousel" ">
+                    <div class=" carousel-indicators">
+                    <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    
+                  
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/site/img/frutaria-Baner.png" class="d-block w-100" alt="banner-do-site">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/site/img/banner (2).png" class="d-block w-100" alt="banner-do-site">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/site/img/banner (3).png" class="d-block w-100" alt="banner-do-site">
+                        </div>
+                        
+                    </div>
+                </div>
+
+        </article>
+       
+
         
 
     </main>
-    <footer class="container-fluid ">
-        <div class="navbar navbar-expand-lg ">
-            <div class="container-fluid col-11">
-                
-                <div >
-                    <li class="nav-item ">
-                        <a class="nav-link text-white">Políticas da Empresa</a>
-                    </li>
+    
+    <footer class="container-fluid col-12">
+
+        <div class="container col-11">
+            <div class=" row fs-6 pt-2 pb-3">
+                <div class="col-12 col-md-4 text-center text-md-left text-white">
+                    &copy,2022 : Hort-Frut Hidromel<br>
+                    Rua das Magnólias, 125, Unaí-MG<br>
+                    CNPJ 99.999.999/0001-99<br>
+
                 </div>
-                <div></div>
-                <div></div>
-                
-               
-                
+                <div class="col-12 col-md-4 text-center text-white">
+                    <a href="/site/privacidade.html" class="text-decoration-none text-white">Politica de
+                        Privacidade</a><br>
+                    <a href="/site/termos.html" class="text-decoration-none text-white">Termos de Uso</a><br>
+                    <a href="/site/quem-somos.html" class="text-decoration-none text-white">Quem Somos</a><br>
+                    <a href="/site/trocas.html" class="text-decoration-none text-white">Trocas e Devoluções</a><br>
+
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-rigth text-white">
+                    <a href="/site/contato.html" class="text-decoration-none text-white">Contato pelo site</a><br>
+                    E-mail:<a href="hidromel@dominio.com"
+                        class="text-decoration-none text-white">hidromel@dominio.com</a><br>
+                    Telefone:<a href="phone:38999457541" class="text-decoration-none text-white">(38)999457541</a>
+                    <br>
+                </div>
             </div>
 
         </div>
-
     </footer>
 </body>
+
 </html>
